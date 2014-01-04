@@ -1,0 +1,10 @@
+# Install the ruby version when displayed instead of displaying a warning and exiting rvm_install_on_use_flag=1 
+
+# Enable the project specific functionality 
+rvm_project_rvmrc=1 
+
+# Automatically create the gemset when rvmrc is used 
+rvm_gemset_create_on_use_flag=1 
+
+# Select the project specific ruby version and gemset name 
+rvm use 1.9.3-p484@sample_app --create
