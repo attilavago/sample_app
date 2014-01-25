@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
-gem 'bootstrap-sass', '2.0.0'
+gem 'bootstrap-sass', '2.3.0'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'pg', '0.12.2'
 
@@ -13,6 +13,10 @@ group :development, :test do
 	gem 'rspec-rails', '2.9.0'
   gem 'guard-rspec', '0.5.5'
   gem 'annotate', '~> 2.4.1.beta'
+  gem "pry"
+  gem "pry-debugger"
+  gem "pry-stack_explorer"
+  gem "pry-rails"
 end
 
 
@@ -43,6 +47,8 @@ group :test do
   gem 'guard-spork', '0.3.2'
   gem 'spork', '0.9.0'
   gem 'factory_girl_rails', '1.4.0'
+  gem 'cucumber-rails', '1.2.1', require: false
+  gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
